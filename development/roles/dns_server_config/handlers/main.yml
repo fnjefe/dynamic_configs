@@ -1,0 +1,21 @@
+---
+          - name: restart named-chroot
+            service:
+                    name: named-chroot
+                    state: restarted
+
+          - name: reload NetworkManager
+            service:
+                    name: NetworkManager
+                    state: reloaded
+
+                
+
+                    
+
+                    
+
+
+
+
+

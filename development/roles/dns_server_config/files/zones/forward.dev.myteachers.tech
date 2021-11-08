@@ -1,0 +1,71 @@
+$TTL 1D
+@       IN SOA  dns.dev.myteachers.tech.   root@dev.myteachers.tech. (
+                                        0       ; serial
+                                        1D      ; refresh
+                                        1H      ; retry
+                                        1W      ; expire
+                                        3H )    ; minimum
+; DNS server information here
+@   IN  NS dns.dev.myteachers.tech.
+@   IN  A  10.0.20.10
+
+
+; Forward lookup for Production Servers with IP from 
+
+
+
+ ;Hypervisors
+;hypervisor2         IN   A  10.0.20.2
+;hypervisor3         IN   A  10.0.20.3
+;hypervisor4         IN   A  10.0.20.4
+
+;Insfrastructure Servers
+dns                 IN   A  10.0.20.10
+awx1                 IN   A  10.0.20.11
+vpn                 IN   A  10.0.20.12
+foreman             IN   A  10.0.20.13
+
+vcenter             IN   A  10.0.20.15
+vcenter16           IN   A  10.0.20.16
+ldap1               IN   A  10.0.20.17
+ldap2               IN   A  10.0.20.18
+
+
+awx                 IN   A  10.0.20.21
+
+
+  ;public IPs
+www                 IN   A   71.246.211.18
+hypervisor3         IN   A   71.246.211.19
+hypervisor2         IN   A   71.246.211.20
+hypervisor4         IN   A   71.246.211.22
+students            IN   A   71.246.211.21
+
+
+
+team2-server        IN   A  10.0.20.120
+
+
+;Version8 Servers
+station60       IN     A        10.0.20.60
+station61       IN     A      	10.0.20.61
+station62	IN     A      	10.0.20.62
+station63	IN     A      	10.0.20.63
+station64	IN     A      	10.0.20.64
+station65	IN     A      	10.0.20.65
+station66	IN     A      	10.0.20.66
+station67	IN     A      	10.0.20.67
+station68	IN     A      	10.0.20.68
+station69	IN     A      	10.0.20.69
+station70	IN     A      	10.0.20.70
+station71	IN     A      	10.0.20.71
+station72	IN     A      	10.0.20.72
+station73	IN     A      	10.0.20.73
+station74	IN     A      	10.0.20.74
+station75	IN     A      	10.0.20.75
+station76	IN     A      	10.0.20.76
+station77	IN     A      	10.0.20.77
+station78	IN     A      	10.0.20.78
+station79	IN     A      	10.0.20.79
+
+
