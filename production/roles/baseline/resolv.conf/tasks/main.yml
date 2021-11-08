@@ -19,6 +19,8 @@
         path: /etc/resolv.conf
         block: |
            search prod.myteachers.tech
+           search dev.myteachers.tech
+           search studentnet.com
            nameserver 10.0.5.10
            nameserver 8.8.8.8
 
