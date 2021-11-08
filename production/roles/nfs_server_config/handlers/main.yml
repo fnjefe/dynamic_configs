@@ -1,0 +1,6 @@
+---
+# handlers file for nfs_server_config
+
+- name: export shares
+  shell: exportfs -avr
+
