@@ -1,0 +1,32 @@
+---
+# tasks file for resolv.conf
+
+
+    - name: remove exixting values in  /etc/resolv.conf
+      lineinfile:
+        path: /etc/resolv.conf
+        regexp: "{{ item }}"
+        state: absent
+      loop:
+        - prod.myteachers.tech
+        - 10.0.5.10
+        - 10.0.10.10
+
+    - name: add values in  /etc/resolv.conf
+      blockinfile:
+        path: /etc/resolv.conf
+        block: |
+           search prod.myteachers.tech
+           nameserver 10.0.5.10
+           nameserver 10.0.10.10
+
+    - name: remove ansible label form  /etc/resolv.conf
+      lineinfile:
+        path: /etc/resolv.conf
+        regexp: "ANSIBLE"
+        state: absent
+        owner: root
+        group: root
+        mode: 0644
+
+

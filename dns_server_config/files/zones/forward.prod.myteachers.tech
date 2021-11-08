@@ -1,0 +1,28 @@
+$TTL 1D
+@       IN SOA  ns2.prod.myteachers.tech.   root.prod.myteachers.tech. (
+                                        0       ; serial
+                                        1D      ; refresh
+                                        1H      ; retry
+                                        1W      ; expire
+                                        3H )    ; minimum
+; DNS server information here
+@   IN  NS ns2.prod.myteachers.tech.
+@   IN  A  10.0.5.10
+ns1                 IN   A  10.0.5.10
+ns2                 IN   A  10.0.5.11
+
+;hypervisors
+hypervisor5         IN   A  10.0.5.5
+
+; infrastructure servers
+ 
+
+foreman             IN   A  10.0.5.13
+awx                 IN   A  10.0.5.14
+vcenter             IN   A  10.0.5.15
+idm                 IN   A  10.0.5.16
+foreman1            IN   A  10.0.5.17
+nfs                 IN   A  10.0.5.18
+nagios              IN   A  10.0.5.19
+
+git                 IN   A  10.0.5.23

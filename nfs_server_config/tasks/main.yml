@@ -1,0 +1,55 @@
+---
+
+- name: install nfs-utils packages
+  package:
+    state: present 
+    name: nfs-utils
+
+
+- name: create the share
+  file:
+    state: directory
+    path: /nfsshare
+    mode: 0755
+
+- name: configure /etc/exports
+  lineinfile:
+    line: /nfsshare   10.0.0.0/16(rw,sync,no_root_squash)
+    state: present
+    path: /etc/exports
+    regexp: nfsshare
+  notify: export shares
+
+- name: Start services
+  service:
+    state: started
+    enabled: true
+    name: "{{ item }}"
+  loop:
+    - nfs-server
+    - rpcbind
+
+- name: allow service through firewall
+  firewalld:
+    permanent: yes
+    immediate: yes
+    state: enabled
+    service: "{{ item }}"
+  loop:
+    - nfs
+    - rpc-bind
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
