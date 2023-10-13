@@ -1,1 +1,6 @@
 
+---
+- name: add the ansible user to all systems
+  hosts: all
+  roles:
+        - dns_server_config
