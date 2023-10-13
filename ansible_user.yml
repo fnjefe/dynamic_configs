@@ -3,4 +3,4 @@
   hosts: all
   roles:
         - ansible_user
-        - nfs_mounts_prod
+        - nfs_mounts
