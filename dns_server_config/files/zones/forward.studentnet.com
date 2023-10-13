@@ -1,57 +1,53 @@
 $TTL 1D
-@       IN SOA  dns.myteachers.tech.   root.myteachers.tech. (
+@       IN SOA  dns.studentnet.com   root.dns.studentnet.com. (
                                         0       ; serial
                                         1D      ; refresh
                                         1H      ; retry
                                         1W      ; expire
                                         3H )    ; minimum
 ; DNS server information here
-@   IN  NS dns.myteachers.tech.
-@   IN  A  10.0.20.10
+@   IN  NS dns.studentnet.com.
+@   IN  A  10.0.10.10
 
 
-; Forward lookup for Production Servers with IP from 
-
-
-
- ;Hypervisors
-hypervisor2         IN   A  10.0.10.2
-hypervisor3         IN   A  10.0.10.3
-hypervisor4         IN   A  10.0.10.4
-
-;Insfrastructure Servers
-dns10               IN   A  10.0.10.10
-ldap11              IN   A  10.0.10.11
+dns                 IN   A  10.0.10.10
+aap                 IN   A  10.0.10.11
 vpn                 IN   A  10.0.10.12
-ldap-replica14      IN   A  10.0.10.14
-
-
+ansible             IN   A  10.0.10.13
+hub                 IN   A  10.0.10.14
 vcenter             IN   A  10.0.10.15
-vcenter16           IN   A  10.0.10.16
-awx                 IN   A  10.0.10.21
+nagios              IN   A  10.0.10.17
+git                 IN   A  10.0.10.17
 
-zabbix              IN   A  10.0.10.19
+satellite           IN   A  10.0.10.24
 
-git                 IN   A  10.0.10.23
+satellite-class     IN   A  10.0.10.23
 
-
-8armstrong       IN   A  10.0.10.71
-8estelle         IN   A  10.0.10.72
-8francis         IN   A  10.0.10.73
-8innocent        IN   A  10.0.10.74
-8michael         IN   A  10.0.10.75
-8ronald          IN   A  10.0.10.76
-8samuelt         IN   A  10.0.10.77
+satellite-innocent  IN   A  10.0.10.33
 
 
-station-instructor  IN   A  10.0.10.80
-station81           IN   A  10.0.10.81
-station82           IN   A  10.0.10.82
-station83           IN   A  10.0.10.83
-station84           IN   A  10.0.10.84
-station85           IN   A  10.0.10.85
-station86           IN   A  10.0.10.86
-station87           IN   A  10.0.10.87
-station88           IN   A  10.0.10.88
-station89           IN   A  10.0.10.89
+
+
+server100           IN   A  10.0.10.100
+server101           IN   A  10.0.10.101
+server102           IN   A  10.0.10.102
+server103           IN   A  10.0.10.103
+server104           IN   A  10.0.10.104
+server105           IN   A  10.0.10.105
+server106           IN   A  10.0.10.106
+server107           IN   A  10.0.10.107
+server108           IN   A  10.0.10.108
+server109           IN   A  10.0.10.109
+server110           IN   A  10.0.10.110
+server111           IN   A  10.0.10.111
+server112           IN   A  10.0.10.112
+server113           IN   A  10.0.10.113
+server114           IN   A  10.0.10.114
+server115           IN   A  10.0.10.115
+server116           IN   A  10.0.10.116
+server117           IN   A  10.0.10.117
+server118           IN   A  10.0.10.118
+server119           IN   A  10.0.10.119
+server120           IN   A  10.0.10.120
+
 
