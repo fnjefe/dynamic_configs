@@ -10,8 +10,8 @@
       loop:
         - prod.myteachers.tech
         - 10.0.5.10
-        - 10.0.10.20
         - 10.0.10.10
+        - 10.10.0.10
         - nameserver
 
     - name: add values in  /etc/resolv.conf
@@ -21,8 +21,9 @@
            search prod.myteachers.tech
            search dev.myteachers.tech
            search studentnet.com
+           nameserver 10.10.0.10
+           nameserver 10.0.10.10
            nameserver 10.0.5.10
-           nameserver 8.8.8.8
 
     - name: remove ansible label form  /etc/resolv.conf
       lineinfile:
