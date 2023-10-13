@@ -1,29 +1,23 @@
 $TTL 1D
-@       IN SOA  ns2.prod.myteachers.tech.   root.prod.myteachers.tech. (
+@       IN SOA  dns.myteachers.tech.   root.myteachers.tech. (
                                         0       ; serial
                                         1D      ; refresh
                                         1H      ; retry
                                         1W      ; expire
                                         3H )    ; minimum
 ; DNS server information here
-@   IN  NS   ns2.prod.myteachers.tech.
-@   IN  PTR  ns2.prod.myteachers.tech.
-
-@   IN  A  10.0.5.10
-
-10      IN    PTR     ns1.prod.myteachers.tech.  
-11      IN    PTR     ns2.prod.myteachers.tech.  
+@   IN  NS dns.myteachers.tech.
+@   IN  A  10.10.0.10
+dns                 IN   A  10.10.0.10
 
 ; hypervisors
-5       IN   PTR     hypervisor5.prod.myteachers.tech.
-; infrastructure servers
 
-13      IN    PTR     foreman.prod.myteachers.tech.  
-14      IN    PTR     awx.prod.myteachers.tech.  
-15      IN    PTR     vcenter.prod.myteachers.tech.  
-16      IN    PTR     idm.prod.myteachers.tech.  
-17      IN    PTR     foreman1.prod.myteachers.tech.  
-18      IN    PTR     nfs.prod.myteachers.tech.
-19      IN    PTR     nagios.prod.myteachers.tech.
+kvm-r730-3             IN   A  10.10.0.3
+esxi-r720-5            IN   A  10.10.0.5
 
-23      IN    PTR    git.prod.myteachers.tech.
+; Infrstructure Servers
+vcenter             IN   A  10.10.0.15
+vpn                 IN   A  10.10.0.12
+
+
+; Other Servers
