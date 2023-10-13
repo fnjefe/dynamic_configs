@@ -1,0 +1,23 @@
+$TTL 1D
+@       IN SOA  dns.myteachers.tech.   root.myteachers.tech. (
+                                        0       ; serial
+                                        1D      ; refresh
+                                        1H      ; retry
+                                        1W      ; expire
+                                        3H )    ; minimum
+; DNS server information here
+@   IN  NS dns.myteachers.tech.
+@   IN  A  10.10.0.10
+dns                 IN   A  10.10.0.10
+
+; hypervisors
+kvm-r730-3             IN   A  10.10.0.3
+esxi-r720-5            IN   A  10.10.0.5
+
+; Infrstructure Servers
+vcenter             IN   A  10.10.0.15
+vpn                 IN   A  10.10.0.12
+
+
+; Other Servers
+
