@@ -1,5 +1,0 @@
----
-- name: configure a dns server
-  hosts: ns1.prod.myteachers.tech 
-  roles:
-          - dns_server_config
