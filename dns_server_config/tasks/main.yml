@@ -6,7 +6,7 @@
                     state: present
 
 
-          - name: create forward.prod.myteachers.tech 
+          - name: Deploy zone files 
             copy:
                     dest: /var/named/
                     src: zones
@@ -15,7 +15,7 @@
             notify: restart named-chroot
 
 
-          - name: create /etc/named.conf
+          - name: Deploy /etc/named.conf
             copy:
                     dest: /etc/named.conf
                     src: named.conf
