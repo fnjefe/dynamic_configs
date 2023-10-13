@@ -1,64 +1,55 @@
 $TTL 1D
-@       IN SOA  dns10.studentnet.com.   root.studentnet.com. (
+@       IN SOA  dns.studentnet.com   root.dns.studentnet.com. (
                                         0       ; serial
                                         1D      ; refresh
                                         1H      ; retry
                                         1W      ; expire
                                         3H )    ; minimum
-; name server information
-@   IN NS dns10.studentnet.com.
-@   IN PTR dns10.studentnet.com.
-
-; PTR records for production servers
-
-dns10    IN   A  10.0.0.10
-
- ; Hypervisors
-2    IN  PTR        hypervisor2.studentnet.com. 
-3    IN  PTR        hypervisor3.studentnet.com.
-4    IN  PTR        hypervisor4.studentnet.com. 
-
-;Insfracturcture servers
-9    IN  PTR        wikipedia.studentnet.com.
-10   IN  PTR        dns10.studentnet.com.
-11   IN  PTR        ldap11.studentnet.com.
-12   IN  PTR        vpn.studentnet.com.
-13   IN  PTR        foreman.studentnet.com.
-14   IN  PTR        ldap-replica14.studentnet.com.
+; DNS server information here
+@   IN  NS dns.studentnet.com.
+@   IN  A  10.0.10.10
 
 
-15   IN  PTR        vcenter.studentnet.com. 
-16   IN  PTR        vcenter16.studentnet.com.
-21   IN  PTR        awx.studentnet.com.
-18   IN  PTR        administration.studentnet.com.
-19   IN  PTR        zabbix.studentnet.com.
+10      IN    PTR     dns.studentnet.com.
+11      IN    PTR     aap.studentnet.com.
+12      IN    PTR     vpn.studentnet.com.
+13      IN    PTR     ansible.studentnet.com.
+14      IN    PTR     hub.studentnet.com.
+15      IN    PTR     vcenter.studentnet.com.
+16      IN    PTR     nagios.studentnet.com.
+17      IN    PTR     git.studentnet.com.
 
-22   IN  PTR        ovirt-engine.studentnet.com.
-23   IN  PTR        git.studentnet.com.
+
+61      IN    PTR     truenas.studentnet.com.
+30      IN    PTR     satellite-class.studentnet.com.
+33      IN    PTR     satellite-innocent.studentnet.com.
+
+
+24      IN    PTR     satellite.studentnet.com.
 
 
 
 
+100      IN    PTR     server100.studentnet.com.
+101      IN    PTR     server101.studentnet.com.
+102      IN    PTR     server102.studentnet.com.
+103      IN    PTR     server103.studentnet.com.
+104      IN    PTR     server104.studentnet.com.
+105      IN    PTR     server105.studentnet.com.
+106      IN    PTR     server106.studentnet.com.
+107      IN    PTR     server107.studentnet.com.
+108      IN    PTR     server108.studentnet.com.
+109      IN    PTR     server109.studentnet.com.
+110      IN    PTR     server110.studentnet.com.
+111      IN    PTR     server111.studentnet.com.
+112      IN    PTR     server112.studentnet.com.
+113      IN    PTR     server113.studentnet.com.
+114      IN    PTR     server114.studentnet.com.
+115      IN    PTR     server115.studentnet.com.
+116      IN    PTR     server116.studentnet.com.
+117      IN    PTR     server117.studentnet.com.
+118      IN    PTR     server118.studentnet.com.
+119      IN    PTR     server119.studentnet.com.
+120      IN    PTR     server120.studentnet.com.
 
-71   IN  PTR        8armstrong.studentnet.com.
-72   IN  PTR        8estelle.studentnet.com.
-73   IN  PTR        8francis.studentnet.com.
-74   IN  PTR        8innocent.studentnet.com.
-75   IN  PTR        8michael.studentnet.com.
-76   IN  PTR        8ronald.studentnet.com.
-77   IN  PTR        8samuel.studentnet.com.
-
-
-80   IN  PTR        station-instructor.studentnet.com.
-81   IN  PTR        station81.studentnet.com.
-82   IN  PTR        station82.studentnet.com.
-83   IN  PTR        station83.studentnet.com.
-84   IN  PTR        station84.studentnet.com.
-85   IN  PTR        station85.studentnet.com.
-86   IN  PTR        station86.studentnet.com.
-87   IN  PTR        station87.studentnet.com.
-88   IN  PTR        station88.studentnet.com.
-89   IN  PTR        station89.studentnet.com.
-
-100   IN  PTR        www.studentnet.com.  ;; #  Thisis same as students.myteachers.tech
 
