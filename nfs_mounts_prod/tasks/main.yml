@@ -24,7 +24,7 @@
 
 
 
- - name: create the mount point /nsfshare
+ - name: Ensure nfs share  /nfsshare is not mounted twice
    lineinfile:
      path: /etc/fstab
      regexp: /nfsshare
@@ -38,4 +38,3 @@
      fstype: nfs4
      opts: _netdev,rw,sync,defaults
      state: mounted
-
